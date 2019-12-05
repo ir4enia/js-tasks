@@ -8,11 +8,28 @@
     <title>Lesson 13. JS intro</title>
     <link rel="stylesheet" href="./css/styles.css">
     <script src="js/script.js" defer></script>
-    <script src="js/my.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
-    <div id="result">No result</div>
-</body>
-
-</html>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <input class="form-control" placeholder="First value" id="first-value">
+            </div>
+    
+            <div class="col-md-6">
+                <input class="form-control" placeholder="Second value" id="second-value">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+    <button class="btn btn-primary" id="verify">Verify</button>
+    <button class="btn btn-primary" id="sum" onclick="sum()">Sum</button>
+            </div>
+        </div>
+    <div id="result"></div>
+    </div>
+    </body>
+    
+    </html>

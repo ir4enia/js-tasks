@@ -1,8 +1,25 @@
-let result = 4 < 1;
+let firstValue, secondValue;
 
-if ( (100 - 10) > 80) {
-  alert("Correct");
-} else {
-  alert("Not correct");
+function sum() {
+ firstValue = document.getElementById('first-value').value;
+ secondValue = document.getElementById('second-value').value;
+
+ firstValue = parseInt(firstValue);
+ secondValue = parseInt(secondValue);
+
+ const result = firstValue + secondValue;
+
+ if (result > 10 && result < 30) {
+   document.body.style.backgroundColor = 'orange';
+   console.log('Result is more then 10 and less then 30')
+ } else if (result > 30) {
+  document.body.style.backgroundColor = 'cyan';
+   console.log("Result is more then 30")
+ } else {
+  document.body.style.backgroundColor = 'red';
+   console.log('Something else')
+ }
+
 }
-  document.getElementById("result").textContent = result;
+
+console.log(firstValue)
